@@ -1,7 +1,7 @@
 var repair_page = require('./pages/repair_page.js');
 var repairPageObj;
 
-describe('Regressio test suite', function() {
+describe('Test suite for Repair', function() {
 	
 	beforeEach(function() {
 		console.log("before each case");

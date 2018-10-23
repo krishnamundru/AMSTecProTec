@@ -20,7 +20,7 @@ var claims_page = function() {
     };
     
     this.getMobileNum = function() {
-    	return this.number.sendKeys("099494959696");
+    	return this.number.sendKeys("114949596");
     };
     
     this.getMessage = function() {

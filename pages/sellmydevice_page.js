@@ -25,7 +25,7 @@ var sellmydevice_page = function() {
     };
     
     this.getName = function() {
-    	return this.name.sendKeys("Test2");;
+    	return this.name.sendKeys("Test3");;
     };
     
     this.getEmail = function() {
@@ -34,7 +34,7 @@ var sellmydevice_page = function() {
     
     
     this.getMobileNum = function() {
-    	return this.number.sendKeys("099494959696");
+    	return this.number.sendKeys("118712340");
     };
     
     this.getDate = function() {

@@ -1,7 +1,7 @@
-describe('Test suite for CSP',function() {
+describe('Test suite for DP',function() {
 			beforeEach(function() {
 			console.log("before each case");
-			var url = 'https://www-uat.tecprotec.co/protect/cracked-screen-protection';
+			var url = 'https://www-uat.tecprotec.co/protect/damage-protection';
 			browser.manage().window().maximize();
 			browser.get(url);
 			});
@@ -78,7 +78,6 @@ describe('Test suite for CSP',function() {
 				element(by.css('.checkmark')).click();	
 				*/
 				
-				element(by.xpath("//button[contains(.,'Buy Now')]")).click();
 				browser.sleep(5000);
 				
 			});

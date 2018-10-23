@@ -4,11 +4,15 @@ exports.config = {
 		
 		framework: 'jasmine',
 		seleniumAddress: 'http://localhost:4444/wd/hub',
-		//specs: ['ContactUS.js'],
-		//specs: ['Repair.js'],
+		
+		specs: ['Repair.js'],
 		specs: ['Claims.js'],
-		//specs: ['SMD.js'],
-		//specs: ['CSP.js'],
+		specs: ['SMD.js'],
+		specs: ['TermsofUse.js'],
+		specs: ['ContactUS.js'],
+		specs: ['AboutUS.js'],
+		specs: ['CSP.js'],
+		specs: ['Damage_Protection.js'],
 		
 		capabilities: {
 			browserName: 'chrome'
@@ -21,7 +25,10 @@ exports.config = {
 		//for reports
 		onPrepare: function(){			
 			jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
-				savePath: './reports'
+				savePath: './reports',
+				takeScreenshots : true,
+				fixedScreenshotName:true,
+				consolidateAll : true
 			})
 			);
 		}

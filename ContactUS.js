@@ -1,7 +1,7 @@
 var contactus_page = require('./pages/contactus_page.js');
 var contactusPageObj;
 
-describe('Regressio test suite', function() {
+describe('Test suite for ContactUS', function() {
 
 	beforeEach(function() {
 		console.log("before each case");
@@ -12,7 +12,7 @@ describe('Regressio test suite', function() {
 	});
 
 	it('test1', function() {
-		console.log("Inside the ContactUS section test1");
+		console.log("Inside the ContactUS section");
 		
 		contactusPageObj.getName();
 		browser.sleep(5000);
