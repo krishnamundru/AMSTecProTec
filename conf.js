@@ -13,6 +13,7 @@ exports.config = {
 		specs: ['AboutUS.js'],
 		specs: ['CSP.js'],
 		specs: ['Damage_Protection.js'],
+		specs: ['Login.js'],
 		
 		capabilities: {
 			browserName: 'chrome'
@@ -32,4 +33,4 @@ exports.config = {
 			})
 			);
 		}
-};
+	};
