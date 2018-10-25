@@ -53,7 +53,7 @@ describe('Test suite for CSP',function() {
 				element.all(by.xpath("//input[@formcontrolname='email']")).first().sendKeys("abc@gmail.com");
 				browser.sleep(5000);
 				
-			 //	element(by.xpath(".//span[contains(@class,'checkmark')]")).click();
+			 
 				console.log("After click button");
 				
 			/*	var policy = element(by.linkText('privacy policy'));
@@ -62,7 +62,7 @@ describe('Test suite for CSP',function() {
 
 				browser.sleep(5000);
 				//element(by.linkText('privacy policy')).click();
-			//	browser.sleep(5000);
+			   //browser.sleep(5000);
 				element.all(by.css('.lc-1k5fzox e1m5b1js0')).get(0).click();
 				browser.sleep(3000);
 				
@@ -73,11 +73,11 @@ describe('Test suite for CSP',function() {
 				var form = element(by.xpath(".//*[@id='uploadFileTextField']"));
 				var ele = form.element(by.css('input[type=file]'));
 				ele.sendKeys("C://Users//krishnaprasad//Pictures//Capture 2.PNG"); // element(by.xpath("//input[type='file']")).
-				
-				browser.sleep(8000);
-				element(by.css('.checkmark')).click();	
 				*/
 				
+				//element(by.xpath(".//span[contains(@class,'checkmark')]")).click();
+				browser.sleep(8000);
+				element(by.css('.checkmark')).click();
 				element(by.xpath("//button[contains(.,'Buy Now')]")).click();
 				browser.sleep(5000);
 				

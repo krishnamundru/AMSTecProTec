@@ -15,6 +15,7 @@ exports.config = {
 		specs: ['Damage_Protection.js'],
 		specs: ['Login.js'],
 		
+		
 		capabilities: {
 			browserName: 'chrome'
 		},
