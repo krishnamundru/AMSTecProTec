@@ -1,19 +1,23 @@
 var claims_page = require('./pages/claims_page.js');
 
 var claimsPageObj;
+
 describe('Test suite for Claims', function() {
 
 	beforeEach(function() {
 		console.log("before each case");
+		browser.waitForAngularEnabled(false);
 		claimsPageObj = new claims_page();
-		var url = 'https://www-uat.tecprotec.co/claim';
+		
+		var url = 'https://www-uat.tecprotec.co/';
 		browser.manage().window().maximize();
 		browser.get(url);
 	});
 
 	it('Claims', function() {
 		console.log("Inside the Claims section test1");
-
+		browser.sleep(3000);
+		element(by.linkText('CLAIM')).click();
 		claimsPageObj.claimButton();
 		browser.sleep(3000);
 		claimsPageObj.getName();

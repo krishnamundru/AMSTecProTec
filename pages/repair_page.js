@@ -2,7 +2,7 @@ var repair_page = function() {
     
     this.button = element(by.xpath("//a[contains(.,'Book Now')]"));
     this.name =  element(by.xpath("//input[@placeholder='Name*']"));
-    this.email = element(by.xpath("//input[@placeholder='Email*']"));
+    this.email = element(by.xpath(".//*[@id='repairForm']/div/div/div/form/div[5]/div[2]/div[2]/input"));
     this.number = element(by.xpath("//input[@placeholder='Phone*']"));
     this.message = element(by.xpath("//textarea[@placeholder='Message*']"));
     this.submit = element(by.xpath("//button[contains(.,'SUBMIT')]"));

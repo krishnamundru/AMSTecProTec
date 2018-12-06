@@ -5,15 +5,16 @@ describe('Test suite for Repair', function() {
 	
 	beforeEach(function() {
 		console.log("before each case");
+		browser.waitForAngularEnabled(false);
 		repairPageObj = new repair_page();
-		var url = 'https://www-uat.tecprotec.co/repair';
+		var url = 'https://www-uat.tecprotec.co/';
 		browser.manage().window().maximize();
 		browser.get(url);
 	});
-
+	
 	it('test2', function() {
 		console.log("Inside the Repair section");
-		
+		element(by.linkText('REPAIR')).click();
 		browser.sleep(3000);
 		repairPageObj.bookButton();
 		

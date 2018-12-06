@@ -1,3 +1,4 @@
+
 var claims_page = function() {
     
     this.button = element(by.xpath("//a[contains(.,'Claim Now')]"));
@@ -20,7 +21,7 @@ var claims_page = function() {
     };
     
     this.getMobileNum = function() {
-    	return this.number.sendKeys("114949596");
+    	return this.number.sendKeys("1117812690");
     };
     
     this.getMessage = function() {
